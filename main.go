@@ -1,9 +1,7 @@
 package main
 
-import "fmt"
-import "crawler/helper"
+import "crawler/alonhadat"
 
 func main() {
-	fmt.Println("Hello world")
-	helper.StringHelper()
+	alonhadat.Run()
 }
