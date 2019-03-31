@@ -1,11 +1,11 @@
 package alonhadat
 
 import (
+	"crawler_alonhadat/helper"
 	"fmt"
 	"io/ioutil"
 	"net/http"
 	"regexp"
-	"crawler/helper"
 )
 
 func crawlCat(catLink string) (bool, string, *regexp.Regexp) {
@@ -38,9 +38,9 @@ func crawlConditional(page int16) bool {
 		page++
 		crawlConditional(page)
 	}
-	fmt.Println(match, page)
+	fmt.Println(match, page, catLink)
 	return false
 }
-func Run(){
+func Run() {
 	crawlConditional(1)
 }

@@ -1,6 +1,6 @@
 package main
 
-import "crawler/alonhadat"
+import "crawler_alonhadat/alonhadat"
 
 func main() {
 	alonhadat.Run()
